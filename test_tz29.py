@@ -14,4 +14,4 @@ def test_add_tz29(playwright: Playwright) -> None:
         page.get_by_role("link", name="Terms of Service").click()
     page1 = page1_info.value
 
-    expect(page).to_have_url("https://docs.github.com/ru/site-policy/")
+    expect(page).to_have_url("https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home")

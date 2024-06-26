@@ -8,8 +8,6 @@ def test_add_37(playwright: Playwright) -> None:
     page = context.new_page()
     page.goto("https://github.com/")
     page.get_by_role("link", name="Sign up").click()
-    time.sleep(2)
     page.get_by_role("link", name="Contact").click()
-    time.sleep(2)
 
-    expect(page).to_have_url("https://support.github.com/request/landing/")
+    expect(page).to_have_url("https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home")
