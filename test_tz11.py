@@ -17,4 +17,6 @@ def test_add_tz11(playwright: Playwright) -> None:
     page.get_by_label("Create a password*").fill("Ww_06111991")
     time.sleep(2)
 
+    expect(page.locator(".js-continue-button"))
+
 

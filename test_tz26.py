@@ -16,3 +16,6 @@ def test_add_tz27(playwright: Playwright) -> None:
     page.locator('//*[@id="password-container"]/div[2]/button').click()
     page.locator('//*[@id="login"]').fill("-Great_Evgeniy-")
     time.sleep(3)
+
+    expect(page.locator(".login-err"))
+    

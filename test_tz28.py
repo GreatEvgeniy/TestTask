@@ -22,4 +22,6 @@ def test_add_tz28(playwright: Playwright) -> None:
     page.get_by_role("button", name="Continue").click()
     time.sleep(3)
 
+    expect(page.locator(".js-continue-button"))
+
 

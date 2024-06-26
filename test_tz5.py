@@ -8,3 +8,5 @@ def test_add_tz5(playwright: Playwright) -> None:
     page = context.new_page()
     page.goto("https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home")
     page.locator('//*[@id="email"]').fill("☺️😒😔🤗✌️😳😭👍😏😆👌😊")
+
+    expect(page.locator("#email-err"))

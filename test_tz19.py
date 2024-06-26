@@ -19,3 +19,5 @@ def test_add_tz19(playwright: Playwright) -> None:
     page.locator('//*[@id="login"]').fill("Great-Evgeniy")
     time.sleep(2)
 
+    expect(page.locator(".js-continue-button"))
+

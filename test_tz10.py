@@ -12,4 +12,5 @@ def test_add_tz10(playwright: Playwright) -> None:
     page.goto("https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home")
     page.locator('//*[@id="email"]').fill("evgeniykilochekgmail.com")
     time.sleep(1)
-    page.locator('//*[@id="email-container"]/div[2]/button').click()
+
+    expect(page.locator("#email-err"))

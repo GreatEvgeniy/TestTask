@@ -13,3 +13,7 @@ def test_add_tz9(playwright: Playwright) -> None:
     page.locator('//*[@id="email"]').fill("evgeniykilochek@gmail.com")
     time.sleep(1)
     page.locator('//*[@id="email-container"]/div[2]/button').click()
+
+    expect(page.locator("#password"))
+
+

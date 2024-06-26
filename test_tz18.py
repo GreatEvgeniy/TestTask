@@ -17,4 +17,4 @@ def test_add_tz18(playwright: Playwright) -> None:
     page.get_by_label("Create a password*").fill("!@06")
     time.sleep(2)
 
-
+    expect(page.locator(".password-validity-summary"))

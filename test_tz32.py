@@ -13,3 +13,5 @@ def test_add_tz32(playwright: Playwright) -> None:
     time.sleep(2)
     page.get_by_role("link", name="Terms", exact=True).click()
     time.sleep(2)
+
+    expect(page).to_have_url("https://docs.github.com/ru/site-policy/github-terms/github-terms-of-service")

@@ -12,4 +12,4 @@ def test_add_37(playwright: Playwright) -> None:
     page.get_by_role("link", name="Contact").click()
     time.sleep(2)
 
-    expect(page).to_have_url("https://support.github.com/request/landing")
+    expect(page).to_have_url("https://support.github.com/request/landing/")

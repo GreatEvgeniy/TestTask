@@ -14,3 +14,5 @@ def test_add_tz33(playwright: Playwright) -> None:
     page.locator("li").filter(has_text="Privacy").click()
     time.sleep(2)
 
+    expect(page).to_have_url("https://docs.github.com/ru/site-policy/privacy-policies/github-general-privacy-statement")
+

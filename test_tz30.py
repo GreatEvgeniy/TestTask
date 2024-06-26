@@ -15,3 +15,5 @@ def test_add_tz30(playwright: Playwright) -> None:
         page.get_by_role("link", name="GitHub Privacy Statement").click()
     page1 = page1_info.value
     time.sleep(2)
+
+    expect(page).to_have_url("https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home")

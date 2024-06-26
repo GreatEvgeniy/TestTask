@@ -17,4 +17,6 @@ def test_add_tz20(playwright: Playwright) -> None:
     page.locator('//*[@id="login"]').fill("Евгений-Великолепный")
     time.sleep(2)
 
+    expect(page.locator("#login-err"))
+
 

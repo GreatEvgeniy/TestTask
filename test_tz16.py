@@ -16,3 +16,5 @@ def test_add_tz16(playwright: Playwright) -> None:
     page.get_by_label("Create a password*").click()
     page.get_by_label("Create a password*").fill("qewrtuyio")
     time.sleep(2)
+
+    expect(page.locator(".password-validity-summary"))

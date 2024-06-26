@@ -13,7 +13,7 @@ def test_add_tz35(playwright: Playwright) -> None:
     time.sleep(2)
     page.get_by_role("link", name="Status").click()
 
-    expect(page).to_have_url("https://www.githubstatus.com")
+    expect(page).to_have_url("https://www.githubstatus.com/")
 
 
 

@@ -16,3 +16,5 @@ def test_add_tz22(playwright: Playwright) -> None:
     page.locator('//*[@id="password-container"]/div[2]/button').click()
     page.locator('//*[@id="login"]').fill("!@#$%^&*(*&^%$#@#$")
     time.sleep(2)
+
+    eexpect(page.locator("#login-err"))

@@ -13,3 +13,5 @@ def test_add_tz31(playwright: Playwright) -> None:
     time.sleep(2)
     page.get_by_role("contentinfo").get_by_label("Homepage").click()
     time.sleep(2)
+
+    expect(page).to_have_url("https://github.com/")

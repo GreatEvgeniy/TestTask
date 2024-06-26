@@ -17,3 +17,6 @@ def test_add_tz25(playwright: Playwright) -> None:
     page.locator('//*[@id="login"]').fill("Great-Evgeniy")
     page.locator('//*[@id="username-container"]/div[2]/button').click()
     time.sleep(2)
+
+    expect(page.locator(".d-flex flex-items-center width-full"))
+

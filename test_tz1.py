@@ -12,6 +12,8 @@ def test_add_tz1(playwright: Playwright) -> None:
     page.get_by_role("banner").get_by_label("Homepage").click()
     time.sleep(2)
 
+    expect(page).to_have_url("https://github.com/")
+
 
 
 
